@@ -1,0 +1,3 @@
+"""这里放入你自己构造的Prompt Example"""
+奇数行=chat对象的few shot-Q样本
+偶数行-chatBot的few shot-A样本
