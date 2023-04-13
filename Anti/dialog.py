@@ -49,10 +49,7 @@ class AntifraudBotBuilder(object):
         self.data = None
         self.hold = None
         self.persona = None
-        self.statement = "你好~在使用此AI前需要声明：
-                         "\n1.当前对话不涉及任何隐私信息，双方共同确认对话的可公开性，\n" \
-                         "2.对话过程中请勿讨论敏感话题，否则需自行承担不当言论可能造成的法律风险。\n" \
-                         "3.如不接受请即刻停止对话，继续对话将被视为完全理解并接受上述声明。"
+        self.statement = "你好~在使用此AI前需要声明："
         self.memory_len = 2 << 5
         self.memory_step = 0
         self.memory = {}
