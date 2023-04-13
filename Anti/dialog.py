@@ -324,7 +324,7 @@ async def main():
 
     bot = Wechaty()
     core = AntifraudBotBuilder()
-    core.parse_data("./prompt/bot_example")
+    core.parse_data("./prompt/bot_example.txt")
     core.parse_split('./prompt/split.txt', True)
 
     set_yuan_account("turingscat", "your_account")
