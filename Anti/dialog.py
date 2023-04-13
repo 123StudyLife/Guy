@@ -318,13 +318,13 @@ async def main():
             https://github.com/wechaty/python-wechaty-getting-started/#wechaty_puppet_service_token
         ''')
     #for cloud-service
-    os.environ['WECHATY_PUPPET_SERVICE_TOKEN']='your_token'
+    os.environ['WECHATY_PUPPET_SERVICE_TOKEN']='puppet_padlocal_34bb70653e194842a29a425e3629625f'
     os.environ['WECHATY_PUPPET']='wechaty-puppet-padlocal'
-    os.environ['WECHATY_PUPPET_SERVICE_ENDPOINT']='your_ip'
+    # os.environ['WECHATY_PUPPET_SERVICE_ENDPOINT']='your_ip'
 
     bot = Wechaty()
     core = AntifraudBotBuilder()
-    core.parse_data("./prompt/bot_example")
+    core.parse_data("./prompt/bot_example.txt")
     core.parse_split('./prompt/split.txt', True)
 
     set_yuan_account("turingscat", "your_account")
