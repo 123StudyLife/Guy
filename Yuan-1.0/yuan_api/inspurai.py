@@ -4,6 +4,10 @@
 # import json
 import os
 import uuid
+import os
+import sys
+sys.path.append(os.path.abspath(os.curdir))
+
 from url_config import submit_request, reply_request
 
 def set_yuan_account(user, phone):
