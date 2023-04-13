@@ -23,7 +23,10 @@ yuan = Yuan(engine='dialog',
 # 3. add examples if in need.
 
 with open('greet.txt', 'r', encoding='utf-8') as f:
-    self_memory_text = [line.strip() for line in f.readlines() if line.strip()]
+    data = [line.strip() for line in f.readlines() if line.strip()]
+
+for i in range(0, len(data), 2):
+    yuan.add_example(Example(inp=data[i], out=data[i+1]))
 
 
 print("====夸夸机器人====")
