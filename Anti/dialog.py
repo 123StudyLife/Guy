@@ -210,12 +210,12 @@ class AntifraudBotBuilder(object):
             f.write(reply + "\n")
         return reply
 
-    def combine_multi_dialog(self) -> boolean:
+#  def combine_multi_dialog(self) -> boolean:
         """
         部分功能还在调试，暂不开源
         """
-        return
-    
+#       return
+
     async def on_message(self, msg: Message):
         """
         Message Handler for the Bot
